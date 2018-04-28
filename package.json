@@ -1,6 +1,6 @@
 {
-  "name": "meteot-base-ui",
-  "version": "1.0.0",
+  "name": "admin-zookeeper",
+  "version": "1.0.1",
   "description": "基础模板框架",
   "author": "七月流星",
   "license": "MIT",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "axios": "0.17.1",
+    "babel-polyfill": "^6.26.0",
     "clipboard": "1.7.1",
     "codemirror": "5.32.0",
     "dropzone": "5.2.0",

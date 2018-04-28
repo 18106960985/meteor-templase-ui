@@ -16,22 +16,22 @@
     </el-row>
 
 
-    <el-row :gutter="32">
-      <el-col :xs="24" :sm="24" :lg="8">
-        <div class="chart-wrapper">
-          <raddar-chart></raddar-chart>
-        </div>
-      </el-col>
+    <!--<el-row :gutter="32">-->
+      <!--<el-col :xs="24" :sm="24" :lg="8">-->
+        <!--<div class="chart-wrapper">-->
+          <!--<raddar-chart></raddar-chart>-->
+        <!--</div>-->
+      <!--</el-col>-->
       <!--<el-col :xs="24" :sm="24" :lg="8">-->
         <!--<div class="chart-wrapper">-->
           <!--<pie-chart></pie-chart>-->
         <!--</div>-->
       <!--</el-col>-->
-      <el-col :xs="24" :sm="24" :lg="8">
-        <div class="chart-wrapper">
-          <bar-chart></bar-chart>
-        </div>
-      </el-col>
+      <!--<el-col :xs="24" :sm="24" :lg="8">-->
+        <!--<div class="chart-wrapper">-->
+          <!--<bar-chart></bar-chart>-->
+        <!--</div>-->
+      <!--</el-col>-->
     </el-row>
 
 
@@ -46,7 +46,7 @@ import LineChart from './components/LineChart'
 import RaddarChart from './components/RaddarChart'
 import PieChart from './components/PieChart'
 import BarChart from './components/BarChart'
-import TransactionTable from './components/TransactionTable'
+
 import TodoList from './components/TodoList'
 import BoxCard from './components/BoxCard'
 
@@ -77,7 +77,7 @@ export default {
     RaddarChart,
     PieChart,
     BarChart,
-    TransactionTable,
+
     TodoList,
     BoxCard
   },

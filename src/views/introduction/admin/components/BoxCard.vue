@@ -3,7 +3,7 @@
 <template>
   <el-card class="box-card-component" style="margin-left:8px;">
     <div slot="header" class="box-card-header">
-      <img src='https://wpimg.wallstcn.com/e7d23d71-cf19-4b90-a1cc-f56af8c0903d.png'>
+      <img :src='headerImg'>
     </div>
     <div style="position:relative;">
       <pan-thumb class="panThumb" :image="avatar"></pan-thumb>
@@ -38,6 +38,7 @@ export default {
 
   data() {
     return {
+      headerImg: require('@/assets/img/Saber.jpg'),
       statisticsData: {
         article_count: 1024,
         pageviews_count: 1024
@@ -74,7 +75,7 @@ export default {
 .box-card-component {
   .box-card-header {
     position: relative;
-    height: 220px;
+    height: 420px;
     img {
       width: 100%;
       height: 100%;
