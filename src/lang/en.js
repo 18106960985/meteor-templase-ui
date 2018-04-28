@@ -62,7 +62,10 @@ export default {
     draft: 'Draft',
     delete: 'Delete',
     cancel: 'Cancel',
-    confirm: 'Confirm'
+    confirm: 'Confirm',
+    tableName: 'table name',
+    tableComment: 'table comment',
+    createTime: 'create time',
   },
   errorLog: {
     tips: 'Please click the bug icon in the upper right corner',

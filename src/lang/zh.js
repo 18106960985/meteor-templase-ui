@@ -61,7 +61,10 @@ export default {
     draft: '草稿',
     delete: '删除',
     cancel: '取 消',
-    confirm: '确 定'
+    confirm: '确 定',
+    tableName: '表名',
+    tableComment: '表注释',
+    createTime: '创建时间',
   },
   errorLog: {
     tips: '请点击右上角bug小图标',
