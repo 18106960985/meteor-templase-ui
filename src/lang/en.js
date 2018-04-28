@@ -2,7 +2,7 @@ export default {
   route: {
     dashboard: 'Dashboard',
     introduction: 'Introduction',
-    generatorCode:'generatorCode V1.0.0',
+    generatorCode:'generatorCode',
 
   },
   navbar: {

@@ -15,6 +15,7 @@ export const constantRouterMap = [
     path: '',
     component: Layout,
     redirect: 'introduction',
+    meta:{ title:'introduction', icon: 'introduction', onChange:true},
     children: [
       {
         path: 'introduction',
@@ -26,7 +27,7 @@ export const constantRouterMap = [
         path: 'generatorCode',
         component: _import('app/generatorCode/index'),
         name: 'generatorCode',
-        meta:{ title:'generatorCode', icon: 'generator', onChange:true}
+        meta:{ title:'generatorCode', icon: 'generate_code', onChange:true}
       },
 
     ]

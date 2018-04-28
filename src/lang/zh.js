@@ -2,7 +2,7 @@ export default {
   route: {
     dashboard: '首页',
     introduction: '简述',
-    generatorCode:'代码生成器v1.0.1',
+    generatorCode:'代码生成器',
   },
   navbar: {
     logOut: '退出登录',
