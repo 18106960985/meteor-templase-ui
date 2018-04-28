@@ -116,12 +116,16 @@
           if (!data) {
             return
           }
-          console.log(data);
+
           let url = window.URL.createObjectURL(new Blob([data]))
           let link = document.createElement('a')
           link.style.display = 'none'
           link.href = url
-          link.setAttribute('download', 'ag-admin-code.zip')
+          let disposition = data.headers['content-disposition']
+          console.log(disposition);
+          let filename = decodeURI(disposition.match(/filename="(.*)"/)[1])
+          console.log(filename);
+          link.setAttribute('download',filename)
 
           document.body.appendChild(link)
           link.click()
@@ -131,6 +135,7 @@
              return item.tableName;
            })
           exportCode(tempList).then(res=>{
+
             this.download(res)
           })
         }
