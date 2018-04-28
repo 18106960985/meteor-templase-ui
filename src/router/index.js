@@ -21,7 +21,14 @@ export const constantRouterMap = [
         component: _import('introduction/index'),
         name: 'introduction',
         meta:{ title:'introduction', icon: 'introduction', onChange:true}
-      }
+      },
+      {
+        path: 'generatorCode',
+        component: _import('app/generatorCode/index'),
+        name: 'generatorCode',
+        meta:{ title:'generatorCode', icon: 'generator', onChange:true}
+      },
+
     ]
   },
 ]
