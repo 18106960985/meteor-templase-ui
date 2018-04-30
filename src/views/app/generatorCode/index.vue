@@ -51,6 +51,8 @@
 
 </template>
 <script>
+  require('script-loader!file-saver');
+  import JSZip from 'jszip'
   import waves from '@/directive/waves' // 水波纹指令
   import {getPage, exportCode} from '@/api/generatorCode/index'
     export default {
@@ -112,32 +114,11 @@
         handleSelectionChange(val){
           this.tableNames = val;
         },
-        download (data) {
-          if (!data) {
-            return
-          }
-
-          let url = window.URL.createObjectURL(new Blob([data]))
-          let link = document.createElement('a')
-          link.style.display = 'none'
-          link.href = url
-          let disposition = data.headers['content-disposition']
-          console.log(disposition);
-          let filename = decodeURI(disposition.match(/filename="(.*)"/)[1])
-          console.log(filename);
-          link.setAttribute('download',filename)
-
-          document.body.appendChild(link)
-          link.click()
-        },
         handleDownload(){
           let tempList =     this.tableNames.map( (item,value)=>{
              return item.tableName;
            })
-          exportCode(tempList).then(res=>{
-
-            this.download(res)
-          })
+          exportCode(tempList);
         }
       }
     }
