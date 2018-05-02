@@ -65,6 +65,7 @@ export default {
     tableName: '表名',
     tableComment: '表注释',
     createTime: '创建时间',
+    name: '姓名',
   },
   errorLog: {
     tips: '请点击右上角bug小图标',
@@ -89,5 +90,9 @@ export default {
     close: '关闭',
     closeOthers: '关闭其它',
     closeAll: '关闭所有'
+  },
+  loading:{
+    default: '加载中……',
+    tableLoading: '给我一点时间',
   }
 }

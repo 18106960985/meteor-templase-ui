@@ -32,6 +32,52 @@ export const constantRouterMap = [
 
     ]
   },
+  {
+    path: '',
+    component: Layout,
+    redirect: 'introduction',
+    meta:{ title:'introduction', icon: 'introduction', onChange:true},
+    children: [
+      {
+        path: 'introduction',
+        component: _import('introduction/index'),
+        name: 'introduction',
+        meta:{ title:'introduction', icon: 'introduction', onChange:true}
+      },
+      {
+        path: 'generatorCode',
+        component: _import('app/generatorCode/index'),
+        name: 'generatorCode',
+        meta:{ title:'generatorCode', icon: 'generate_code', onChange:true}
+      },
+
+    ]
+  },
+  { //模板示例
+    path: '/example',
+    component: Layout,
+    redirect: '/example/table/complex-table',
+    name: 'example',
+    meta: {
+      title: 'example',
+      icon: 'example'
+    },
+    children: [
+      {
+        path: '/example/table',
+        component: _import('app/example/table/index'),
+        redirect: '/example/table/complex-table',
+        name: 'Table',
+        meta: {
+          title: 'Table',
+          icon: 'table'
+        },
+        children: [
+          { path: 'complex-table', component: _import('app/example/table/complexTable'), name: 'complexTable', meta: { title: 'complexTable' }}
+        ]
+      }
+    ]
+  },
 ]
 
 export default new Router({

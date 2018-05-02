@@ -66,6 +66,7 @@ export default {
     tableName: 'table name',
     tableComment: 'table comment',
     createTime: 'create time',
+    name: 'name',
   },
   errorLog: {
     tips: 'Please click the bug icon in the upper right corner',
@@ -90,5 +91,9 @@ export default {
     close: 'Close',
     closeOthers: 'Close Others',
     closeAll: 'Close All'
+  },
+  loading:{
+    default: 'loading ……',
+    tableLoading: 'table loading ……',
   }
 }
