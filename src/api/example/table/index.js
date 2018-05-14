@@ -2,11 +2,20 @@ import request from '@/utils/request'
 
 
 const API = '/table'
-export function page(){
+export function page(query){
   return request({
     url: API + '/page',
-    method: 'get'
+    method: 'get',
+    params:query
   })
+}
+
+export function getTable() {
+  return request({
+    url: API+ '/getTable',
+    method:'get'
+  })
+
 }
 
 export function addObj(){

@@ -11,6 +11,7 @@ Mock.mock(/\/user\/info\.*/, 'get', loginAPI.getUserInfo)
 
 //表格相关
 Mock.mock(/\/table\/page/, 'get', tableAPI.page)
+Mock.mock(/\/table\/getTable/, 'get', tableAPI.getTable())
 Mock.mock(/\/table\/add/, 'post', tableAPI.createTable)
 Mock.mock(/\/table\/put\.*/, 'put', tableAPI.updateTable)
 

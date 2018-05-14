@@ -56,7 +56,7 @@ export const constantRouterMap = [
   { //模板示例
     path: '/example',
     component: Layout,
-    redirect: '/example/table/complex-table',
+    redirect: '/example/table/components-table',
     name: 'example',
     meta: {
       title: 'example',
@@ -66,14 +66,14 @@ export const constantRouterMap = [
       {
         path: '/example/table',
         component: _import('app/example/table/index'),
-        redirect: '/example/table/complex-table',
+        redirect: '/example/table/components-table',
         name: 'Table',
         meta: {
           title: 'Table',
           icon: 'table'
         },
         children: [
-          { path: 'complex-table', component: _import('app/example/table/complexTable'), name: 'complexTable', meta: { title: 'complexTable' }}
+          { path: 'components-table', component: _import('app/example/table/componentsTable/index'), name: 'componentsTable', meta: { title: 'componentsTable' }}
         ]
       }
     ]

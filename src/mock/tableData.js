@@ -21,8 +21,9 @@ for (let i = 0; i < count; i++) {
 export default {
   page: (config) => {
     //从url中拦截数据
-    console.log(config)
-    const {  name, page = 1, limit = 20, sort } = param2Obj(config.url)
+
+    const {  name, page = 1, limit = 15, sort } = param2Obj(config.url)
+    console.log(limit)
     //过滤数据
     let mockList = List.filter(item => {
       if (name && item.title.indexOf(name) < 0) return false
